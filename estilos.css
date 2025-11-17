@@ -5,8 +5,6 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Banner superior */
@@ -37,11 +35,11 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 25px;
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    flex: 1;
+    min-height: 60vh;
 }
 
 /* Productos */
@@ -71,18 +69,22 @@ body {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
-/* Botones */
+/* Botones - CENTRADOS */
 .btn-comprar, .btn-gratis {
-    display: inline-block;
+    display: block;
     padding: 15px 30px;
     font-size: 1.2rem;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
     transition: all 0.3s ease;
-    margin-top: auto; /* Empuja el botón hacia abajo */
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+    max-width: 250px;
 }
 
 .btn-comprar {
@@ -105,18 +107,15 @@ body {
     transform: scale(1.05);
 }
 
-/* Pie de página */
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+/* Frase inspiradora para llenar espacio */
+.frase-inspiradora {
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 40px 0;
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
 /* Responsive */
@@ -128,5 +127,9 @@ footer p {
     .container {
         grid-template-columns: 1fr;
         padding: 20px 10px;
+    }
+    
+    .btn-comprar, .btn-gratis {
+        width: 90%;
     }
 }
