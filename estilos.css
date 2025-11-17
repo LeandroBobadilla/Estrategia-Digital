@@ -5,6 +5,8 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Banner superior */
@@ -39,6 +41,7 @@ body {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1;
 }
 
 /* Productos */
@@ -49,6 +52,9 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .producto:hover {
@@ -76,6 +82,7 @@ body {
     border-radius: 50px;
     font-weight: bold;
     transition: all 0.3s ease;
+    margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
 .btn-comprar {
@@ -96,6 +103,20 @@ body {
 .btn-gratis:hover {
     background: #0056b3;
     transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 /* Responsive */
