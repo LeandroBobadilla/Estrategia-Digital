@@ -36,7 +36,7 @@
   <div class="producto llanten">
     <h2>🌿 Cultivo y Comercialización de Llantén</h2>
     <p>Negocio con valor agregado</p>
-    <a href="Llantén/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="Llanten/index.html" class="btn-comprar">Ver Detalles</a>
   </div>
 
   <!-- Guías Espirituales -->
@@ -53,4 +53,5 @@
         <p>"Descubre el conocimiento que transforma vidas y conecta con la sabiduría ancestral"</p>
     </div>
 </body>
+
 </html>
