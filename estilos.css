@@ -130,3 +130,79 @@ body {
     font-size: 1rem;
   }
 }
+/* Sección Quién soy */
+.quien-soy {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contenido-quien {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contenido-quien h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.contenido-quien p {
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contenido-quien h2 {
+    font-size: 1.6rem;
+  }
+
+  .contenido-quien {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+/* Barra de navegación */
+.navbar {
+  background: #2c3e50; /* color oscuro elegante */
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f1c40f; /* dorado al pasar el mouse */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
