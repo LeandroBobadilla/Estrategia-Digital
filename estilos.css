@@ -75,3 +75,58 @@ body {
 .btn-comprar, .btn-gratis, .button {
   display: block;
   padding
+/* Portada principal */
+.portada-banner {
+  background-image: url('fondo-11.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  padding: 20px;
+}
+
+.portada-contenido h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.portada-contenido h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.portada-contenido .frase {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive portada */
+@media (max-width: 600px) {
+  .portada-banner {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .portada-contenido h1 {
+    font-size: 2rem;
+  }
+
+  .portada-contenido h2 {
+    font-size: 1.4rem;
+  }
+
+  .portada-contenido .frase {
+    font-size: 1rem;
+  }
+}
