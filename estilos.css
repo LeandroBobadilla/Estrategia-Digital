@@ -268,3 +268,39 @@ body {
         width: 90%;
     }
 }
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+}
