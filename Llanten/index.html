@@ -1,161 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía: Llantén Orgánico y Modelo de Negocio</title>
-    <link rel="stylesheet" href="../estilos.css">
-    <style>
-        /* Estilos básicos para la visualización en celular (asumiendo que 'estilos.css' es responsivo) */
-        .bloque-compra-dual {
-            display: flex;
-            flex-direction: column; /* Apila los botones en móviles */
-            gap: 15px;
-            margin: 20px 0;
-            padding: 15px;
-            border: 2px solid #5aa75f; /* Color verde que evoca lo natural */
-            border-radius: 10px;
-            text-align: center;
-        }
-        .btn-pago-local, .btn-pago-global, .btn-whatsapp {
-            display: block;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        .btn-pago-local {
-            background-color: #5aa75f; /* Verde para destacar YAPE */
-            color: white;
-        }
-        .btn-pago-global {
-            background-color: #f0f0f0; 
-            color: #333;
-            border: 1px solid #ccc;
-        }
-        .proceso-yape {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f7fff6; /* Fondo suave para el bloque de pago */
-            border-radius: 10px;
-            text-align: center;
-        }
-        .qr-yape {
-            max-width: 150px;
-            height: auto;
-            margin: 10px auto;
-            border: 3px solid #0055d7; /* Borde que evoca el color de YAPE */
-            border-radius: 5px;
-        }
-        .pasos-yape {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .numero-yape {
-            font-size: 1.2em;
-            color: #0055d7; /* Azul Yape */
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía Técnica: Cultivo y Comercialización de Llantén</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fdf8;
+      color: #333;
+    }
+    main {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #2e7d32;
+    }
+    .bloque-compra {
+      border: 2px solid #5aa75f;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 90%;
+      max-width: 300px;
+    }
+    .btn-local {
+      background-color: #5aa75f;
+      color: white;
+    }
+    .btn-global {
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: white;
+    }
+    .qr-yape {
+      max-width: 180px;
+      height: auto;
+      margin: 10px auto;
+      border: 3px solid #0055d7;
+      border-radius: 5px;
+      display: block;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #eef8ec;
+    }
+    .retorno {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .retorno a {
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-    <header class="header-llanten">
-        <a href="../index.html" class="btn-retorno">← Volver al Catálogo Principal</a>
-        
-        <h1>🌿 Cultivo y Comercialización de Llantén</h1>
-        <p>Modelo de Negocio con Valor Agregado para la Agricultura Familiar en Perú.</p>
-        
-        <div class="bloque-compra-dual">
-            <h3>Adquiera la Guía Técnica: S/. 20.00 Soles (o $5 USD)</h3>
-            
-            <a href="#instrucciones_yape" class="btn-pago-local">
-                PAGAR con YAPE o PLIN (S/. 20.00)
-            </a>
-            
-            <a href="https://leandrobobadilla.gumroad.com/l/eusosr" class="btn-pago-global" target="_blank">
-                Comprar con Tarjeta (USD $5.00)
-            </a>
-        </div>
-        
-    </header>
+  <main>
+    <h1>🌿 Guía Técnica: Cultivo y Comercialización de Llantén</h1>
+    <p>Modelo de negocio con valor agregado para la agricultura familiar en Perú.</p>
 
-    <main class="container">
-        <section>
-            <h2>La Inversión Técnica que su Huerto Necesita</h2>
-            <p>Deje de sembrar solo por sembrar. Esta Guía es el **plan de negocios** diseñado para transformar la cosecha de Llantén en una fuente de ingresos constante y sostenible para su familia, con datos y costos reales del Perú.</p>
-            
-            <p><strong>Con la compra, usted obtiene:</strong></p>
-            <ul>
-                <li>✅ **Licencia de Uso Comercial:** Autorización para implementar la metodología y generar ingresos con su cultivo.</li>
-                <li>✅ **Ruta de Valor Agregado:** Cómo convertir la hoja fresca en productos de mayor valor (extractos, tisanas).</li>
-                <li>✅ **Estimación de Costos:** Tablas de inversión inicial y proyección de egresos (basadas en costos de Perú).</li>
-                <li>✅ Técnicas de cultivo orgánico detalladas y adaptadas a las zonas rurales.</li>
-            </ul>
-        </section>
+    <div class="bloque-compra">
+      <h2>Precio: S/. 20.00 Soles (≈ USD $5.00)</h2>
+      <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
+      <a href="https://leandrobobadilla.gumroad.com/l/eusosr" class="btn btn-global" target="_blank">Comprar con Tarjeta (USD $5.00)</a>
+    </div>
 
-        <section>
-            <h2>Contenido de la Guía (55 Páginas de Know-How)</h2>
-            <ul>
-                <li>📘 Instrucciones paso a paso para sembrar y cuidar el llantén con enfoque orgánico.</li>
-                <li>🌱 Métodos de cosecha, conservación y secado para máxima calidad.</li>
-                <li>🧪 Preparaciones medicinales: infusiones, ungüentos y cataplasmas tradicionales.</li>
-                <li>📊 Análisis de mercado y potencial comercial del llantén en la agroindustria.</li>
-            </ul>
-        </section>
+    <h2>¿Qué incluye esta guía?</h2>
+    <ul>
+      <li>✅ Licencia de uso comercial para aplicar el modelo.</li>
+      <li>✅ Ruta de valor agregado: extractos, tisanas, productos derivados.</li>
+      <li>✅ Tablas de inversión y costos reales en Perú.</li>
+      <li>✅ Técnicas de cultivo orgánico adaptadas a zonas rurales.</li>
+    </ul>
 
-        <section>
-            <h2>Bonos para Emprendedores</h2>
-            <ul>
-                <li>📷 Ficha visual para identificar el llantén correctamente (evitando errores).</li>
-                <li>📝 Recetario básico con usos terapéuticos validados.</li>
-                <li>📦 Plantilla para etiquetar productos derivados (para una imagen profesional).</li>
-            </ul>
-        </section>
+    <h2>Contenido (55 páginas)</h2>
+    <ul>
+      <li>📘 Instrucciones paso a paso para sembrar y cuidar el llantén.</li>
+      <li>🌱 Métodos de cosecha, conservación y secado.</li>
+      <li>🧪 Preparaciones medicinales tradicionales.</li>
+      <li>📊 Análisis de mercado y potencial agroindustrial.</li>
+    </ul>
 
-        <section id="instrucciones_yape" class="proceso-yape">
-            <h2>✅ PAGO SEGURO Yape/Plin (S/. 20.00 Soles)</h2>
-            <p>Siga estos 3 sencillos pasos para recibir su Guía Técnica en minutos:</p>
+    <h2>Bonos para emprendedores</h2>
+    <ul>
+      <li>📷 Ficha visual para identificar el llantén correctamente.</li>
+      <li>📝 Recetario terapéutico validado.</li>
+      <li>📦 Plantilla para etiquetar productos derivados.</li>
+    </ul>
 
-            <div class="pasos-yape">
-                <div class="paso">
-                    <h3>PASO 1: Transferir S/. 20.00</h3>
-                    <p>Escanee el Código QR o transfiera al número:</p>
-                    <p class="numero-yape">📲 **+51 971 446 653**</p>
-                    <img src="../img/qr-yape.jpg" alt="Código QR Yape/Plin" class="qr-yape">
-                </div>
+    <h2 id="pago-local">✅ Pago local con Yape/Plin</h2>
+    <p>1. Transfiere S/. 20.00 al número:</p>
+    <p><strong>📲 +51 971 446 653</strong></p>
+    <img src="qr-yape-miguel.jpg" alt="Código QR Yape Miguel Leandro" class="qr-yape">
+    <p>2. Envía el comprobante y tu correo por WhatsApp:</p>
+    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20la%20Guía%20del%20Llantén%20S%2F.%2020.00.%20Mi%20correo%20es%3A%20%5BAQUÍ%20MI%20CORREO%5D" class="btn btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
+    <p>3. Recibe tu guía en menos de 15 minutos (horario de atención: 8:00 a.m. – 10:00 p.m.).</p>
 
-                <div class="paso">
-                    <h3>PASO 2: Enviar Comprobante</h3>
-                    <p>Envíenos la captura de su transferencia y su correo electrónico para la entrega:</p>
-                    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20la%20Guía%20del%20Llantén%20S%2F.%2020.00.%20Mi%20correo%20es%3A%20%5BAQUÍ%20MI%20CORREO%5D" target="_blank" class="btn-whatsapp">
-                        🟢 Clic aquí para enviar a WhatsApp
-                    </a>
-                </div>
-                
-                <div class="paso">
-                    <h3>PASO 3: Reciba su Guía</h3>
-                    <p>Confirmamos el pago y enviamos el PDF con su licencia de uso al correo proporcionado.</p>
-                </div>
-            </div>
-            <p class="nota-entrega">Tiempo de entrega: Menos de 15 minutos (horario de atención 8:00 a.m. a 10:00 p.m. hora Perú).</p>
+    <div class="retorno">
+      <a href="https://leandrobobadilla.github.io/Estrategia-Digital/">← Volver al Catálogo Principal</a>
+    </div>
+  </main>
 
-        </section>
-
-        <section class="retorno-final">
-             <a href="../index.html" class="btn-retorno">← Volver al Catálogo Principal</a>
-        </section>
-
-    </main>
-
-    <footer id="contacto">
-        <p>📧 Correo: vidaverde.proyectos@gmail.com</p>
-        <p>🌐 Web: Caminos del Perú Ancestral</p>
-    </footer>
+  <footer>
+    <p>📧 Correo: vidaverde.proyectos@gmail.com</p>
+    <p>🌐 Web: Caminos del Perú Ancestral</p>
+  </footer>
 
 </body>
-
 </html>
