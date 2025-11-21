@@ -2,60 +2,192 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Una Vida a Prueba de Enfermedades</title>
-  <link rel="stylesheet" href="../estilos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fdf6e3, #ffffff);
+      color: #333;
+    }
+    main {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #2e7d32;
+    }
+    header {
+      background-color: #81c784;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    .bloque-compra {
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px 0;
+      text-align: center;
+      background-color: #f1f8e9;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 90%;
+      max-width: 300px;
+      text-align: center;
+    }
+    .btn-local {
+      background-color: #4caf50;
+      color: white;
+    }
+    .btn-global {
+      background-color: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: white;
+    }
+    .qr-yape {
+      max-width: 220px;
+      height: auto;
+      margin: 15px auto;
+      border: 3px solid #2e7d32;
+      border-radius: 5px;
+      display: block;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e8f5e9;
+    }
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 📱 Media Queries para responsive */
+    @media (max-width: 768px) {
+      main {
+        padding: 15px;
+      }
+      header h1 {
+        font-size: 1.6em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      .btn {
+        font-size: 0.95em;
+        padding: 10px 15px;
+      }
+      .qr-yape {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.4em;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+      p, li {
+        font-size: 0.95em;
+        line-height: 1.4em;
+      }
+      .btn {
+        width: 100%;
+        max-width: none;
+        font-size: 0.9em;
+      }
+      .qr-yape {
+        max-width: 150px;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Una Vida a Prueba de Enfermedades</h1>
+    <h1>🌿 Una Vida a Prueba de Enfermedades</h1>
     <p>Desactiva el estrés y activa tu longevidad en 21 días con sabiduría ancestral.</p>
-    <p><strong>Precio:</strong> $20 USD</p>
-    <a href="https://tu-enlace-de-compra.com" class="button">Comprar ahora</a>
   </header>
 
-  <section>
-  <h2>Una Vida a Prueba de Enfermedades</h2>
-  <p>Esta guía te ofrece un enfoque integral para fortalecer tu salud física, mental y emocional. Basada en principios científicos y saberes ancestrales, aprenderás a prevenir enfermedades comunes, mejorar tu sistema inmunológico y adoptar hábitos sostenibles que transforman tu bienestar.</p>
-  <ul>
-    <li>✅ Estrategias naturales para fortalecer tu sistema inmunológico</li>
-    <li>✅ Consejos prácticos para alimentación, descanso y movimiento</li>
-    <li>✅ Enfoque preventivo con respaldo científico y cultural</li>
-    <li>✅ Ideal para personas que buscan autonomía en su salud</li>
-  </ul>
-  <p><strong>Precio:</strong> $20 USD</p>
-  <a href="https://buy.stripe.com/tu-enlace-salud" class="button-guia">Comprar con tarjeta</a>
-  <a href="Guía-Salud.pdf" target="_blank" class="button-guia">Descargar guía (versión completa)</a>
-</section>
+  <main>
+    <div class="bloque-compra">
+      <h2>Precio: USD $20.00 (≈ S/. 70.00 Soles)</h2>
+      <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
+      <a href="https://leandrobobadilla.gumroad.com/l/tfggd" class="btn btn-global" target="_blank">Comprar con Tarjeta (USD $20.00)</a>
+    </div>
 
-  <section>
-    <h2>¿Qué incluye?</h2>
+    <h2>¿Qué aprenderás con esta guía?</h2>
+    <ul>
+      <li>✅ Estrategias naturales para fortalecer tu sistema inmunológico.</li>
+      <li>✅ Consejos prácticos para alimentación, descanso y movimiento.</li>
+      <li>✅ Enfoque preventivo con respaldo científico y cultural.</li>
+      <li>✅ Ideal para personas que buscan autonomía en su salud.</li>
+    </ul>
+
+    <h2>Contenido (más de 100 páginas)</h2>
     <ul>
       <li>📘 6 capítulos prácticos.</li>
       <li>🎁 5 anexos: recetas, rituales, cuestionarios.</li>
       <li>🧠 Fundamento científico + sabiduría ancestral.</li>
     </ul>
-  </section>
 
-  <section>
     <h2>Bonos exclusivos</h2>
     <ul>
       <li>🎧 Recomendaciones musicales.</li>
       <li>📝 Cuestionario de estrés ancestral.</li>
       <li>🛒 Lista de compras imprimible.</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Compra con confianza</h2>
-    <p>✔️ Acceso inmediato al PDF.  
-    ✔️ Garantía de satisfacción.  
-    ✔️ Soporte por correo si tienes dudas.</p>
-    <a href="https://tu-enlace-de-compra.com" class="button">Quiero mi guía ahora</a>
-  </section>
+    <h2 id="pago-local">✅ Pago local con Yape/Plin</h2>
+    <p>1. Transfiere S/. 70.00 al número:</p>
+    <p><strong>📲 +51 971 446 653</strong></p>
+    <img src="../qr-yape-miguel.jpg" alt="Código QR Yape Miguel Leandro" class="qr-yape">
+    <p>2. Envía el comprobante y tu correo por WhatsApp:</p>
+    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20la%20Guía%20de%20Salud%20S%2F.%2070.00.%20Mi%20correo%20es%3A%20%5BAQUÍ%20MI%20CORREO%5D" class="btn btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
+    <p>3. Recibe tu guía en menos de 15 minutos (horario de atención: 8:00 a.m. – 10:00 p.m.).</p>
+
+    <div class="retorno">
+      <a href="https://leandrobobadilla.github.io/Estrategia-Digital/">← Volver al Catálogo Principal</a>
+    </div>
+  </main>
 
   <footer>
-    <p>© 2025 Vida Verde Proyectos | M. Leandro Bobadilla</p>
+    <p>📧 Correo: vidaverde.proyectos@gmail.com</p>
+    <p>🌐 Web: Caminos del Perú Ancestral</p>
   </footer>
 
 </body>
