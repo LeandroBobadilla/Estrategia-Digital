@@ -1,0 +1,42 @@
+[
+  {
+    "id": "articulo1",
+    "titulo": "🌿 3 prácticas ancestrales para reducir el estrés",
+    "fecha": "2025-11-20",
+    "resumen": "Respiración consciente, infusiones herbales y escritura ritual con respaldo ancestral y científico.",
+    "archivo": "blog/articulo1.html",
+    "categoria": "salud"
+  },
+  {
+    "id": "articulo2",
+    "titulo": "🌄 Turismo vivencial: más allá de la experiencia",
+    "fecha": "2025-11-23",
+    "resumen": "El turismo comunitario fortalece identidad cultural, economía local y bienestar emocional.",
+    "archivo": "blog/articulo2.html",
+    "categoria": "turismo"
+  },
+  {
+    "id": "articulo3",
+    "titulo": "🌱 Llantén: propiedades medicinales y agrícolas",
+    "fecha": "2025-11-23",
+    "resumen": "El llantén combina usos medicinales ancestrales con evidencia científica y potencial agroecológico.",
+    "archivo": "blog/articulo3.html",
+    "categoria": "agricultura"
+  },
+  {
+    "id": "articulo4",
+    "titulo": "✨ Espiritualidad Andina y Bienestar Integral",
+    "fecha": "2025-11-23",
+    "resumen": "La cosmovisión andina como herramienta de bienestar emocional y cohesión comunitaria.",
+    "archivo": "blog/articulo4.html",
+    "categoria": "espiritualidad"
+  },
+  {
+    "id": "articulo5",
+    "titulo": "🌍 Desarrollo comunitario sostenible: salud, turismo, agricultura y espiritualidad",
+    "fecha": "2025-11-23",
+    "resumen": "Integración de los cuatro ejes para un modelo de desarrollo sostenible con respaldo ancestral y científico.",
+    "archivo": "blog/articulo5.html",
+    "categoria": "integración"
+  }
+]
