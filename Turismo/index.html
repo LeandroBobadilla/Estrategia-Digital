@@ -4,145 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guía Técnica: Turismo Vivencial Rural</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fefdf6;
-      color: #333;
-    }
-    main {
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #d35400;
-    }
-    .bloque-compra {
-      border: 2px solid #e67e22;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 20px 0;
-      text-align: center;
-      background-color: #fff8f0;
-    }
-    .btn {
-      display: block;
-      margin: 10px auto;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      width: 90%;
-      max-width: 300px;
-      text-align: center;
-    }
-    .btn-local {
-      background-color: #e67e22;
-      color: white;
-    }
-    .btn-global {
-      background-color: #f0f0f0;
-      color: #333;
-      border: 1px solid #ccc;
-    }
-    .btn-whatsapp {
-      background-color: #25d366;
-      color: white;
-    }
-    .qr-yape {
-      max-width: 220px;
-      height: auto;
-      margin: 15px auto;
-      border: 3px solid #d35400;
-      border-radius: 5px;
-      display: block;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      margin-top: 40px;
-      padding: 10px;
-      background-color: #fef0e6;
-    }
-    .retorno {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .retorno a {
-      text-decoration: none;
-      color: #d35400;
-      font-weight: bold;
-    }
-
-    /* 🎥 Estilo para videos responsivos */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* proporción 16:9 */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* 📱 Media Queries para responsive */
-    @media (max-width: 768px) {
-      main {
-        padding: 15px;
-      }
-      h1 {
-        font-size: 1.6em;
-        text-align: center;
-      }
-      h2 {
-        font-size: 1.3em;
-      }
-      .btn {
-        font-size: 0.95em;
-        padding: 10px 15px;
-      }
-      .qr-yape {
-        max-width: 180px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.4em;
-      }
-      h2 {
-        font-size: 1.2em;
-      }
-      p, li {
-        font-size: 0.95em;
-        line-height: 1.4em;
-      }
-      .btn {
-        width: 100%;
-        max-width: none;
-        font-size: 0.9em;
-      }
-      .qr-yape {
-        max-width: 150px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css"> <!-- Aquí enlazaremos tu CSS externo -->
 </head>
 <body>
 
@@ -152,8 +14,16 @@
 
     <div class="bloque-compra">
       <h2>Precio: USD $20.00 (≈ S/. 68.00 Soles)</h2>
-      <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
-      <a href="https://leandrobobadilla.gumroad.com/l/dqfprx" class="btn btn-global" target="_blank">Comprar con Tarjeta (USD $20.00)</a>
+
+      <!-- 🔶 Prioridad Hotmart -->
+      <p style="font-weight:bold; color:#d35400;">⭐ Recomendado para Perú</p>
+      <a href="https://hotmart.com/tu-enlace" class="btn btn-local" target="_blank">Comprar en Hotmart (S/. 68.00)</a>
+
+      <!-- 🔷 Opción internacional Gumroad -->
+      <a href="https://leandrobobadilla.gumroad.com/l/dqfprx" class="btn btn-global" target="_blank">Comprar en Gumroad (USD $20.00)</a>
+
+      <!-- 🧠 Explicación -->
+      <p style="font-size:0.9em; color:#666;">Hotmart acepta pagos en soles y entrega inmediata. Gumroad es ideal para pagos internacionales.</p>
     </div>
 
     <!-- 🎥 Video promocional -->
