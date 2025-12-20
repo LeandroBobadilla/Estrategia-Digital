@@ -333,3 +333,14 @@ footer a {
   color: white;
   text-align: center;
   padding: 20px;
+.reseña {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #555;
+}
+.reseña span {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: #2e7d32;
+}
