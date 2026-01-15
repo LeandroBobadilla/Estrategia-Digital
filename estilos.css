@@ -329,18 +329,4 @@ footer a {
    Frase inspiradora
 ========================= */
 .frase-inspiradora {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-.reseña {
-  margin-bottom: 15px;
-  font-style: italic;
-  color: #555;
-}
-.reseña span {
-  display: block;
-  text-align: right;
-  font-weight: bold;
-  color: #2e7d32;
-}
+  background:
