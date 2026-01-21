@@ -108,9 +108,29 @@
     <p>La guía definitiva para crear paquetes de turismo costero premium con mínima inversión inicial.</p>
 
     <div class="bloque-compra">
-      <h2>Precio: USD $20.00 (≈ S/. 72.00 Soles)</h2>
+      <h2>Precio: USD $25.00 (≈ S/. 89.00 Soles)</h2>
       <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
-      <a href="https://pay.hotmart.com/Y103153008A" class="btn btn-hotmart" target="_blank">🛒 Comprar por Hotmart</a>
+
+      <!-- Botón Hotmart integrado -->
+      <script type="text/javascript">
+        function importHotmart(){ 
+          var imported = document.createElement('script'); 
+          imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+          document.head.appendChild(imported); 
+          var link = document.createElement('link'); 
+          link.rel = 'stylesheet'; 
+          link.type = 'text/css'; 
+          link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+          document.head.appendChild(link); 
+        } 
+        importHotmart(); 
+      </script>
+
+      <a onclick="return false;" 
+         href="https://pay.hotmart.com/R103927442J?checkoutMode=2" 
+         class="hotmart-fb hotmart__button-checkout btn btn-hotmart">
+         🛒 Comprar por Hotmart
+      </a>
     </div>
 
     <!-- 🎥 Video promocional -->
@@ -143,11 +163,11 @@
     </ul>
 
     <h2 id="pago-local">✅ Pago local con Yape/Plin</h2>
-    <p>1. Transfiere S/. 72.00 al número:</p>
+    <p>1. Transfiere S/. 89.00 al número:</p>
     <p><strong>📲 +51 971 446 653</strong></p>
     <img src="../qr-yape-miguel.jpg" alt="Código QR Yape Miguel Leandro" class="qr-yape">
     <p>2. Envía el comprobante y tu correo por WhatsApp:</p>
-    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20El%20Método%20Costa%20Viva%20S%2F.%2072.00.%20Mi%20correo%20es%3A%20%5BAQUÍ%20MI%20CORREO%5D" class="btn btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
+    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20El%20Método%20Costa%20Viva%20S%2F.%2090.00.%20Mi%20correo%20es%3A%20%5BAQUÍ%20MI%20CORREO%5D" class="btn btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
     <p>3. Recibe tu guía en menos de 15 minutos (horario de atención: 8:00 a.m. – 10:00 p.m.).</p>
 
     <div class="retorno">

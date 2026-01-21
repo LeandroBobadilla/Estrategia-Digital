@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,32 +47,70 @@
       color: #2c3e50;
       margin-bottom: 20px;
     }
-    .articulo-preview {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    #blog ul {
+      list-style: none;
+      padding: 0;
     }
-    .articulo-preview h3 {
-      margin-top: 0;
-      color: #2e7d32;
-    }
-    .articulo-preview p {
+    #blog li {
       margin: 10px 0;
     }
-    .articulo-preview a {
+    #blog a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+    #blog a:hover {
+      color: #1a252f;
+    }
+
+    /* ✨ Botones CTA */
+    .btn-comprar {
       display: inline-block;
       margin-top: 10px;
-      padding: 8px 15px;
+      padding: 10px 18px;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-comprar:hover {
+      background: #218838;
+    }
+    .btn-gratis {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
       background: #2c3e50;
       color: #fff;
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    .articulo-preview a:hover {
+    .btn-gratis:hover {
       background: #1a252f;
+    }
+
+    /* 📧 Contacto */
+    footer {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      border-top: 2px solid #ddd;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* 🌟 Frase inspiradora */
+    .frase-inspiradora {
+      text-align: center;
+      font-style: italic;
+      margin: 30px 0;
+      color: #2c3e50;
     }
   </style>
 </head>
@@ -102,26 +139,8 @@
 <section class="quien-soy" id="quien-soy">
   <div class="contenido-quien">
     <h2>🧑‍💼 Quién soy</h2>
-
     <p><strong>Chusik Ñan – El Camino del Viento</strong></p>
-
     <p>Mi misión es enseñar a las personas a <strong>vivir bien</strong>: con salud, con raíces y con autonomía.</p>
-
-    <p>Creo que la verdadera salud nace de lo natural, de escuchar al cuerpo y de recuperar prácticas que nuestros abuelos conocían bien.  
-    Creo que la cultura y la sabiduría ancestral son una brújula para vivir con equilibrio, propósito y conexión.  
-    Y creo que sin bienestar económico no hay libertad, no hay tranquilidad y no hay salud que se sostenga.</p>
-
-    <p>Por eso, en Chusik Ñan integro tres pilares fundamentales:</p>
-
-    <ul>
-      <li>🌱 <strong>Salud natural</strong> para fortalecer el cuerpo y prevenir enfermedades.</li>
-      <li>🌄 <strong>Sabiduría ancestral y cultura</strong> para reconectar con nuestra identidad.</li>
-      <li>🌾 <strong>Autonomía económica</strong> mediante emprendimientos estratégicos, agricultura orgánica y oportunidades reales.</li>
-    </ul>
-
-    <p>Mi propósito es acompañarte a construir una vida más consciente, más fuerte y más libre.  
-    Una vida donde tú seas el protagonista de tu bienestar.</p>
-
     <p>Este es el Camino del Viento.  
     Este es <strong>Chusik Ñan</strong>.</p>
   </div>
@@ -129,42 +148,36 @@
 
 <!-- Contenido Principal -->
 <main class="container" id="guias">
-  <!-- Guía Protocolo Anti-Estrés -->
   <div class="producto protocolo">
     <h2>✨ Protocolo de 5 Minutos Anti-Estrés</h2>
     <p>Reduce el cortisol y encuentra tu Ikigai en solo 5 minutos diarios.</p>
-    <a href="Protocolo/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="Protocolo/index.html" class="btn-comprar">Libérate del estrés hoy</a>
   </div>
 
-  <!-- Guía Salud -->
   <div class="producto salud">
     <h2>🧘 Una Vida a Prueba de Enfermedades</h2>
     <p>Los 5 pilares para una vida saludable</p>
-    <a href="Salud/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="Salud/index.html" class="btn-comprar">Descarga tu guía de salud</a>
   </div>
 
-  <!-- Guía Turismo -->
   <div class="producto turismo">
     <h2>🌄 Guía Turismo Vivencial Rural</h2>
     <p>Emprendimiento de bajo costo</p>
-    <a href="Turismo/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="Turismo/index.html" class="btn-comprar">Empieza tu viaje ahora</a>
   </div>
   
-  <!-- Guía Método Costa Viva -->
   <div class="producto metodo-costa-viva">
     <h2>🌊 El Método Costa Viva</h2>
     <p>La guía definitiva para crear paquetes de turismo costero premium con mínima inversión.</p>
-    <a href="MetodoCostaViva/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="MetodoCostaViva/index.html" class="btn-comprar">Crea tu paquete premium</a>
   </div>
 
-  <!-- Guía Llantén -->
   <div class="producto llanten">
     <h2>🌿 Cultivo y Comercialización de Llantén</h2>
     <p>Negocio con valor agregado</p>
-    <a href="Llanten/index.html" class="btn-comprar">Ver Detalles</a>
+    <a href="Llanten/index.html" class="btn-comprar">Inicia tu negocio verde</a>
   </div>
 
-  <!-- Guías Espirituales -->
   <div class="producto espiritualidad">
     <h2>🕊️ Legados Espirituales Andinos</h2>
     <p>Recursos gratuitos: culturas prehispánicas, sabiduría ancestral y salud preventiva.</p>
@@ -175,271 +188,21 @@
 <!-- Sección Videos Promocionales -->
 <section class="videos-promocionales" id="videos">
   <h2>🎥 Videos Promocionales</h2>
-  <h3>✨ Protocolo de 5 Minutos Anti-Estrés</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/voT_ha6dTU0" title="Video Protocolo Anti-Estrés" allowfullscreen></iframe>
-  </div>
-  <h3>🧘 Una Vida a Prueba de Enfermedades</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/j3JzDGCJv4Y" title="Video Guía Salud" allowfullscreen></iframe>
-  </div>
-  <h3>🌄 Guía Turismo Vivencial Rural</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Hl9rxCPQTAw" title="Video Guía Turismo" allowfullscreen></iframe>
-  </div>
-  <h3>🌊 El Método Costa Viva</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/DNFExq6RCEs" 
-    title="Video Método Costa Viva" allowfullscreen></iframe>
-  </div>
-  <h3>🌿 Cultivo y Comercialización de Llantén</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/jW8FKXQiqbk" title="Video Guía Llantén" allowfullscreen></iframe>
-  </div>
+  <!-- Aquí van tus iframes de YouTube como ya los tenías -->
 </section>
-
-<!-- Sección Blog dinámica -->
+  
+<!-- Sección Blog -->
 <section id="blog">
-  <h2>📰 Artículos recientes</h2>
-  <div id="blog-list"></div>
-</section>
-
-<!-- Sección Contacto -->
-<footer id="contacto">
-  <p>📧 Correo: vidaverde.proyectos@gmail.com</p>
-  <p>🌐 Web: Sabiduría Ancestral y Emprendimiento</p>
-</footer>
-
-<!-- Frase inspiradora -->
-<div class="frase-inspiradora">
-  <p>"Descubre el conocimiento que transforma vidas y conecta con la sabiduría ancestral"</p>
-</div>
-
-<!-- Script para cargar blog.json -->
-<script>
-  fetch('blog.json')
-    .then(response => response.json())
-    .then(data => {
-      const contenedor = document.getElementById('blog-list');
-      data.forEach(articulo => {
-        const bloque = document.createElement('div');
-        bloque.classList.add('articulo-preview');
-        bloque.innerHTML = `
-          <h3>${articulo.titulo}</h3>
-          <p><em>${articulo.fecha}</em></p>
-          <p>${articulo.resumen}</p>
-          <a href="${articulo.archivo}">Leer más</a>
-        `;
-        contenedor.appendChild(bloque);
-      });
-    })
-    .catch(error => console.error('Error cargando blog.json:', error));
-</script>
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Libros Digitales - Cultura y Emprendimiento</title>
-  <link rel="stylesheet" href="estilos.css">
-  <style>
-    /* 🎥 Estilo para videos responsivos */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* proporción 16:9 */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .videos-promocionales {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-    }
-    .videos-promocionales h2 {
-      color: #2e7d32;
-      margin-bottom: 15px;
-    }
-
-    /* 📰 Estilo para la sección de blog */
-    #blog {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    #blog h2 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 20px;
-    }
-    .articulo-preview {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .articulo-preview h3 {
-      margin-top: 0;
-      color: #2e7d32;
-    }
-    .articulo-preview p {
-      margin: 10px 0;
-    }
-    .articulo-preview a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: #2c3e50;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .articulo-preview a:hover {
-      background: #1a252f;
-    }
-  </style>
-</head>
-<body>
-<!-- Barra de navegación -->
-<nav class="navbar">
+  <h2>📝 Blog</h2>
+  <p>Explora artículos sobre turismo, bienestar y sostenibilidad, creados para inspirar y guiar tu camino.</p>
   <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#quien-soy">Quién soy</a></li>
-    <li><a href="#guias">Guías</a></li>
-    <li><a href="#videos">Videos</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="blog/articulo1.html">🏝️ 3 prácticas ancestrales para reducir el estrés</a></li>
+    <li><a href="blog/articulo2.html">🌄 Turismo vivencial: más allá de la experiencia</a></li>
+    <li><a href="blog/articulo3.html">🌿 Llantén: propiedades medicinales y agrícolas</a></li>
+    <li><a href="blog/articulo4.html">✨ Espiritualidad Andina y Bienestar Integral</a></li>
+    <li><a href="blog/articulo5.html">💡 Desarrollo comunitario sostenible: salud, turismo, agricultura y espiritualidad</a></li>
+    <li><a href="blog/articulo6.html">🌊 Turismo costero: cómo empezar con mínima inversión</a></li>
   </ul>
-</nav>
-
-<!-- Banner Superior -->
-<header class="banner" id="inicio">
-  <div class="banner-content">
-    <h1>Sabiduría Ancestral y Emprendimiento</h1>
-    <p>Descubre conocimientos que transformarán tu vida</p>
-  </div>
-</header>
-
-<!-- Sección Quién soy -->
-<section class="quien-soy" id="quien-soy">
-  <div class="contenido-quien">
-    <h2>🧑‍💼 Quién soy</h2>
-
-    <p><strong>Chusik Ñan – El Camino del Viento</strong></p>
-
-    <p>Mi misión es enseñar a las personas a <strong>vivir bien</strong>: con salud, con raíces y con autonomía.</p>
-
-    <p>Creo que la verdadera salud nace de lo natural, de escuchar al cuerpo y de recuperar prácticas que nuestros abuelos conocían bien.  
-    Creo que la cultura y la sabiduría ancestral son una brújula para vivir con equilibrio, propósito y conexión.  
-    Y creo que sin bienestar económico no hay libertad, no hay tranquilidad y no hay salud que se sostenga.</p>
-
-    <p>Por eso, en Chusik Ñan integro tres pilares fundamentales:</p>
-
-    <ul>
-      <li>🌱 <strong>Salud natural</strong> para fortalecer el cuerpo y prevenir enfermedades.</li>
-      <li>🌄 <strong>Sabiduría ancestral y cultura</strong> para reconectar con nuestra identidad.</li>
-      <li>🌾 <strong>Autonomía económica</strong> mediante emprendimientos estratégicos, agricultura orgánica y oportunidades reales.</li>
-    </ul>
-
-    <p>Mi propósito es acompañarte a construir una vida más consciente, más fuerte y más libre.  
-    Una vida donde tú seas el protagonista de tu bienestar.</p>
-
-    <p>Este es el Camino del Viento.  
-    Este es <strong>Chusik Ñan</strong>.</p>
-  </div>
-</section>
-
-<!-- Contenido Principal -->
-<main class="container" id="guias">
-  <!-- Guía Protocolo Anti-Estrés -->
-  <div class="producto protocolo">
-    <h2>✨ Protocolo de 5 Minutos Anti-Estrés</h2>
-    <p>Reduce el cortisol y encuentra tu Ikigai en solo 5 minutos diarios.</p>
-    <a href="Protocolo/index.html" class="btn-comprar">Ver Detalles</a>
-  </div>
-
-  <!-- Guía Salud -->
-  <div class="producto salud">
-    <h2>🧘 Una Vida a Prueba de Enfermedades</h2>
-    <p>Los 5 pilares para una vida saludable</p>
-    <a href="Salud/index.html" class="btn-comprar">Ver Detalles</a>
-  </div>
-
-  <!-- Guía Turismo -->
-  <div class="producto turismo">
-    <h2>🌄 Guía Turismo Vivencial Rural</h2>
-    <p>Emprendimiento de bajo costo</p>
-    <a href="Turismo/index.html" class="btn-comprar">Ver Detalles</a>
-  </div>
-
-  <!-- Guía Método Costa Viva -->
-  <div class="producto metodo-costa-viva">
-    <h2>🌊 El Método Costa Viva</h2>
-    <p>La guía definitiva para crear paquetes de turismo costero premium con mínima inversión.</p>
-    <a href="MetodoCostaViva/index.html" class="btn-comprar">Ver Detalles</a>
-  </div>
-
-  <!-- Guía Llantén -->
-  <div class="producto llanten">
-    <h2>🌿 Cultivo y Comercialización de Llantén</h2>
-    <p>Negocio con valor agregado</p>
-    <a href="Llanten/index.html" class="btn-comprar">Ver Detalles</a>
-  </div>
-
-   <!-- Guías Espirituales -->
-  <div class="producto espiritualidad">
-    <h2>🕊️ Legados Espirituales Andinos</h2>
-    <p>Recursos gratuitos: culturas prehispánicas, sabiduría ancestral y salud preventiva.</p>
-    <a href="Espiritualidad/index.html" class="btn-gratis">Explorar Descargas</a>
-  </div>
-</main>
-
-<!-- Sección Videos Promocionales -->
-<section class="videos-promocionales" id="videos">
-  <h2>🎥 Videos Promocionales</h2>
-  <h3>✨ Protocolo de 5 Minutos Anti-Estrés</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/voT_ha6dTU0" title="Video Protocolo Anti-Estrés" allowfullscreen></iframe>
-  </div>
-  <h3>🧘 Una Vida a Prueba de Enfermedades</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/j3JzDGCJv4Y" title="Video Guía Salud" allowfullscreen></iframe>
-  </div>
-  <h3>🌄 Guía Turismo Vivencial Rural</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/Hl9rxCPQTAw" title="Video Guía Turismo" allowfullscreen></iframe>
-  </div>
-  <h3>🌿 Cultivo y Comercialización de Llantén</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/jW8FKXQiqbk" title="Video Guía Llantén" allowfullscreen></iframe>
-  </div>
-  <h3>🌊 El Método Costa Viva</h3>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/DNFExq6RCEs" title="Video Método Costa Viva" allowfullscreen></iframe>
-  </div>
-</section>
-
-<!-- Sección Blog dinámica -->
-<section id="blog">
-  <h2>📰 Artículos recientes</h2>
-  <div id="blog-list"></div>
 </section>
 
 <!-- Sección Contacto -->
@@ -452,36 +215,5 @@
 <div class="frase-inspiradora">
   <p>"Descubre el conocimiento que transforma vidas y conecta con la sabiduría ancestral"</p>
 </div>
-
-<!-- Script para cargar blog.json -->
-<script>
-  fetch('blog.json')
-    .then(response => response.json())
-    .then(data => {
-      const contenedor = document.getElementById('blog-list');
-      data.forEach(articulo => {
-        const bloque = document.createElement('div');
-        bloque.classList.add('articulo-preview');
-        bloque.innerHTML = `
-          <h3>${articulo.titulo}</h3>
-          <p><em>${articulo.fecha}</em></p>
-          <p>${articulo.resumen}</p>
-          <a href="${articulo.archivo}">Leer más</a>
-        `;
-        contenedor.appendChild(bloque);
-      });
-    })
-    .catch(error => console.error('Error cargando blog.json:', error));
-</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
->>>>>>> 83b350c37522b0137568df67d1dde7fa4ae418f9
