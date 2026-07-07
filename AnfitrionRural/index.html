@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Ruta del Anfitrión Rural</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefdf6;
+      color: #333;
+    }
+    main {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #006994; /* azul marino para diferenciar */
+    }
+    .bloque-compra {
+      border: 2px solid #006994;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px 0;
+      text-align: center;
+      background-color: #f0faff;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 90%;
+      max-width: 300px;
+      text-align: center;
+    }
+    .btn-local {
+      background-color: #006994;
+      color: white;
+    }
+    .btn-gumroad {
+      background-color: #FF6A00;
+      color: #fff;
+      border: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+    .btn-gumroad:hover {
+      background-color: #E55A00;
+    }
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: white;
+    }
+    .qr-yape {
+      max-width: 220px;
+      height: auto;
+      margin: 15px auto;
+      border: 3px solid #006994;
+      border-radius: 5px;
+      display: block;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #e6f7ff;
+    }
+    .retorno {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .retorno a {
+      text-decoration: none;
+      color: #006994;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>🌄 La Ruta del Anfitrión Rural</h1>
+    <p>Guía práctica para crear un negocio de turismo rural premium con mínima inversión, basada en mi experiencia en la sierra de Piura y aplicable a cualquier territorio.</p>
+
+    <div class="bloque-compra">
+      <h2>Precio: USD $18.00 (≈ S/. 65.00 Soles)</h2>
+      <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
+
+      <!-- Botón gumroad integrado -->
+      <script type="text/javascript">
+        function importgumroad(){ 
+          var imported = document.createElement('script'); 
+          imported.src = 'https://static.gumroad.com/checkout/widget.min.js'; 
+          document.head.appendChild(imported); 
+          var link = document.createElement('link'); 
+          link.rel = 'stylesheet'; 
+          link.type = 'text/css'; 
+          link.href = 'https://static.gumroad.com/css/gumroad-fb.min.css'; 
+          document.head.appendChild(link); 
+        } 
+        importgumroad(); 
+      </script>
+
+      <a onclick="return false;" 
+         href="https://pay.gumroad.com/R103927442J?checkoutMode=2" 
+         class="gumroad-fb gumroad__button-checkout btn btn-gumroad">
+         🛒 Comprar por gumroad
+      </a>
+    </div>
+
+    <!-- 🎥 Video promocional -->
+    <h2>🎥 Video promocional: La Ruta del Anfitrión Rural</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/DNFExq6RCEs" 
+      title="La Ruta del Anfitrión Rural" allowfullscreen></iframe>
+    </div>
+
+    <h2>¿Qué aprenderás con esta guía?</h2>
+    <ul>
+      <li>✅ Diseñar paquetes de turismo rural premium con riesgo mínimo.</li>
+      <li>✅ El "Guion que Nunca Falla" para cerrar alianzas con aliados locales.</li>
+      <li>✅ Convertir tu casa o espacio familiar en un activo rentable.</li>
+      <li>✅ Validar tu idea con inversión mínima y máxima seguridad.</li>
+      <li>✅ Finanzas simples para calcular tu rentabilidad desde el primer grupo.</li>
+      <li>✅ Proyectar profesionalismo con herramientas digitales simples.</li>
+    </ul>
+
+    <h2>Contenido (más de 90 páginas)</h2>
+    <ul>
+      <li>📘 Estrategias paso a paso para cimentar tu proyecto.</li>
+      <li>🗺️ 8 módulos: mentalidad, activos invisibles, ingeniería del producto, alianzas, marketing de bajo costo, finanzas, ejecución y sostenibilidad.</li>
+      <li>📸 Casos reales y ejemplos prácticos de la sierra de Piura.</li>
+    </ul>
+
+    <h2>Bonos incluidos</h2>
+    <ul>
+      <li>🎥 2 Videos exclusivos: "El Guion que Nunca Falla" y "Validación de Bajo Costo en Acción".</li>
+      <li>📝 8 Plantillas editables listas para usar (actas, checklists, guiones y CRM).</li>
+      <li>📊 Guía para implementar tu oficina digital (WhatsApp Business + Calendly).</li>
+    </ul>
+
+    <h2 id="pago-local">✅ Pago local con Yape/Plin</h2>
+    <p>1. Transfiere S/. 65.00 al número:</p>
+    <p><strong>📲 +51 971 446 653</strong></p>
+    <img src="../qr-yape-miguel.jpg" alt="Código QR Yape Miguel Leandro" class="qr-yape">
+    <p>2. Envía el comprobante y tu correo por WhatsApp:</p>
+    <a href="https://wa.me/51971446653?text=Hola%2C%20acabo%20de%20pagar%20La%20Ruta%20del%20Anfitri%C3%B3n%20Rural%20S%2F.%2065.00.%20Mi%20correo%20es%3A%20%5BAQU%C3%8D%20MI%20CORREO%5D" class="btn btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
+    <p>3. Recibe tu guía en menos de 15 minutos (horario de atención: 8:00 a.m. – 10:00 p.m.).</p>
+
+    <div class="retorno">
+      <a href="https://leandrobobadilla.github.io/Estrategia-Digital/">← Volver al Catálogo Principal</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>📧 Correo: vidaverde.proyectos@gmail.com</p>
+    <p>🌐 Web: Caminos del Perú Ancestral</p>
+  </footer>
+
+</body>
+</html>
