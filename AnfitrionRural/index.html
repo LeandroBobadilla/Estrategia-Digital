@@ -18,7 +18,7 @@
       padding: 20px;
     }
     h1, h2 {
-      color: #006994; /* azul marino para diferenciar */
+      color: #006994;
     }
     .bloque-compra {
       border: 2px solid #006994;
@@ -39,6 +39,7 @@
       width: 90%;
       max-width: 300px;
       text-align: center;
+      transition: background-color 0.3s ease;
     }
     .btn-local {
       background-color: #006994;
@@ -56,6 +57,9 @@
     .btn-whatsapp {
       background-color: #25d366;
       color: white;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1da851;
     }
     .qr-yape {
       max-width: 220px;
@@ -111,25 +115,12 @@
       <h2>Precio: USD $18.00 (≈ S/. 65.00 Soles)</h2>
       <a href="#pago-local" class="btn btn-local">Pagar con Yape o Plin</a>
 
-      <!-- Botón gumroad integrado -->
-      <script type="text/javascript">
-        function importgumroad(){ 
-          var imported = document.createElement('script'); 
-          imported.src = 'https://leandrobobadilla.gumroad.com/l/twgmyn'; 
-          document.head.appendChild(imported); 
-          var link = document.createElement('link'); 
-          link.rel = 'stylesheet'; 
-          link.type = 'text/css'; 
-          link.href = 'https://leandrobobadilla.gumroad.com/l/twgmyn'; 
-          document.head.appendChild(link); 
-        } 
-        importgumroad(); 
-      </script>
-
-      <a onclick="return false;" 
-         href="https://leandrobobadilla.gumroad.com/l/twgmyn?wanted=true" 
-         class="gumroad-fb gumroad__button-checkout btn btn-gumroad">
-         🛒 Comprar por gumroad
+      <!-- ✅ Botón Gumroad simplificado -->
+      <a href="https://leandrobobadilla.gumroad.com/l/twgmyn" 
+         class="btn btn-gumroad" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         🛒 Comprar por Gumroad
       </a>
     </div>
 
