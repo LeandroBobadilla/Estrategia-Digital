@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌱 Estrategia Digital - Caminos del Perú Ancestral
 
 Bienvenido a este repositorio de **guías digitales** que promueven el desarrollo sostenible, la salud integral y el turismo vivencial con identidad cultural.  
@@ -148,4 +147,3 @@ Hoy desarrollo proyectos digitales que integran **territorio, cultura y emprendi
 
 
 © 2026 Vida Verde Proyectos | M. Leandro Bobadilla
->>>>>>> 2547fe8bd96d14dea984529bba4ec5c43c30512c
